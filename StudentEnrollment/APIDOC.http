@@ -1,0 +1,75 @@
+###
+GET http://127.0.0.1:8000/api/student/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/api/student/
+Content-Type: application/json
+
+{
+    "student_name": "Meera Joseph",
+    "email": "meera@example.com",
+    "phone": "9988776655",
+    "department": "Information Technology",
+    "joining_date": "2026-07-10"
+}
+
+###
+GET http://127.0.0.1:8000/api/student/4/
+Accept: application/json
+
+
+###
+PUT http://127.0.0.1:8000/api/student/1/
+Content-Type: application/json
+
+{
+    "student_name": "Meera Joseph",
+    "email": "meera@example.com",
+    "phone": "8907889879",
+    "department": "Information Technology",
+    "joining_date": "2026-07-10"
+}
+
+###
+DELETE http://127.0.0.1:8000/api/student/1/
+
+
+###
+GET http://127.0.0.1:8000/api/enrollment/
+Accept: application/json
+
+
+###
+POST  http://127.0.0.1:8000/api/enrollment/
+Content-Type:  application/json
+
+{
+    "student": 4,
+    "course": "HTML CSS and JavaScript",
+    "enrollment": "2026-08-10",
+    "duration": 5,
+    "status": "completed"
+}
+
+
+###
+GET http://127.0.0.1:8000/api/enrollment/2/
+Accept: application/json
+
+###
+PUT  http://127.0.0.1:8000/api/enrollment/3/
+Content-Type:  application/json
+
+{
+    "student": 4,
+    "course": "Python Full Stack",
+    "enrollment": "2026-08-10",
+    "duration": 5,
+    "status": "completed"
+}
+
+###
+DELETE  http://127.0.0.1:8000/api/enrollment/3/
+Content-Type:  application/json
